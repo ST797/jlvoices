@@ -1,0 +1,36 @@
+.body
+{
+  margin-right: 0px;
+}
+
+
+.para
+{
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.flp .container{
+  width: 300px;
+  height: 400px;
+  margin-left: 5%;
+  margin-top: 5%
+}
+.flip{
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+
+.front, .back{
+  position: absolute;
+  backface-visibility: hidden;
+
+}
+.back{
+  transform: rotateY(180deg);
+}
+
+.flp .container:hover .flip{
+  transform:rotateY(180deg);
+}
